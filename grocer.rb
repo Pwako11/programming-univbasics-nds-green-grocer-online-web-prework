@@ -12,7 +12,7 @@ def find_item_by_name_in_collection(name, collection)
     item = collection[index]
     
     if item[:item] == name
-      result = item[index]] 
+      result = item[index] 
     else
       nil
     end 
