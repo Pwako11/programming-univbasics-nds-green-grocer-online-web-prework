@@ -19,7 +19,7 @@ def find_item_by_name_in_collection(name, collection)
     index += 1 
   end
   result 
-
+binding.pry
   
 end
 
