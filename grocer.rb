@@ -44,8 +44,9 @@ def apply_coupons(cart, coupons)
   new_array []
   index = 0 
   
-  while index < cart.length do 
-    new_array_item = consolidate_cart(cart[index][:item, new_array])
+  while index < coupons.length do 
+    
+    new_array_item = find_item_by_name_in_collection(cart[index][:item, new_array])
     
     index += 1 
   end 
