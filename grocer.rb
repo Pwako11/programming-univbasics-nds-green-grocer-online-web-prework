@@ -5,18 +5,22 @@ def find_item_by_name_in_collection(name, collection)
   #
   # Consult README for inputs and outputs
   
-  result
+  result = {}
   index = 0 
   
   while index < collection.length do 
     item = collection[index]
     
-    if 
+    if  !result[collection[name]]
+      result[collection[name]] = item[name]
+    else
+      result[collection[name]] += item[name]
     
+    end 
     index += 1 
-    
   end
   
+  result 
   binding.pry
   
 end
