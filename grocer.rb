@@ -14,7 +14,7 @@ def find_item_by_name_in_collection(name, collection)
     if  !result[item[name]]
       result[item[name]] = item[name]
     else
-      result[item[name]] = nil
+      nil
     
     end 
     index += 1 
