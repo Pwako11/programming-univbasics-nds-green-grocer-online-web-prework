@@ -13,8 +13,6 @@ def find_item_by_name_in_collection(name, collection)
     
     if item[:item] == name
       result = item[index] 
-    else
-      nil
     end 
     index += 1 
   end
