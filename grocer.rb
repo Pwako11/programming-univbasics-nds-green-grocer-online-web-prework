@@ -33,7 +33,7 @@ def consolidate_cart(cart)
     index += 1 
   end 
   new_array
-  binding.pry
+  #binding.pry
 end
 
 def apply_coupons(cart, coupons)
