@@ -11,8 +11,7 @@ def find_item_by_name_in_collection(name, collection)
   while index < collection.length do 
     item = collection[index]
     
-    binding.pry
-    if  result[item[:item]] == name
+    if item[:item] == name
       result[item[index]] 
     else
       nil
