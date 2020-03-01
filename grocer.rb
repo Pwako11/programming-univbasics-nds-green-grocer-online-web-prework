@@ -41,7 +41,6 @@ def apply_coupons(cart, coupons)
   #
   # REMEMBER: This method **should** update cart
   
-  new_array []
   index = 0 
   
   while index < coupons.length do 
@@ -53,11 +52,11 @@ def apply_coupons(cart, coupons)
     if cart_item && cart_item[:count] >= coupons[index][:num]
       if cart_item_with_coupon
         cart_item_with_coupon[:count] += coupon[index][:num]
-        cart_item[:count] -= coupons[counter][:num]
+        cart_item[:count] -= coupons[index][:num]
       else
         cart_item_with_coupon = {
           :item => couponed_item_name, 
-          :price => coupons[index][:cost]/ coupons[counter][:num],
+          :price => coupons[index][:cost]/ coupons[index][:num],
           :count => coupons[index][:num],
           :clearance => cart_item[:clearance]
         }
