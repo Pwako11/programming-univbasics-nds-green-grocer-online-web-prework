@@ -11,6 +11,7 @@ def find_item_by_name_in_collection(name, collection)
   while index < collection.length do 
     item = collection[index]
     
+    binding.pry
     if  !result[item[name]]
       result[item[index]] = item[name]
     else
@@ -18,9 +19,8 @@ def find_item_by_name_in_collection(name, collection)
     end 
     index += 1 
   end
-  
   result 
-  binding.pry
+
   
 end
 
