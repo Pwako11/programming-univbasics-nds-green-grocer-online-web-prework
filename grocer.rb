@@ -12,8 +12,8 @@ def find_item_by_name_in_collection(name, collection)
     item = collection[index]
     
     binding.pry
-    if  !result[item[name]]
-      result[item[index]] = item[name]
+    if  result[item[:item]] == name
+      result[item[index]] 
     else
       nil
     end 
