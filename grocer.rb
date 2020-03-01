@@ -11,7 +11,7 @@ def find_item_by_name_in_collection(name, collection)
   while index < collection.length do 
     item = collection[index]
     
-    if  result[item[name]]
+    if  !result[item[name]]
       result[item[index]] = item[name]
     else
       nil
