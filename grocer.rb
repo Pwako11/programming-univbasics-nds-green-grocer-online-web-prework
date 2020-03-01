@@ -11,10 +11,10 @@ def find_item_by_name_in_collection(name, collection)
   while index < collection.length do 
     item = collection[index]
     
-    if  !result[collection[name]]
-      result[collection[name]] = item[name]
+    if  !result[item[name]]
+      result[item[name]] = item[name]
     else
-      result[collection[name]] = nil
+      result[item[name]] = nil
     
     end 
     index += 1 
