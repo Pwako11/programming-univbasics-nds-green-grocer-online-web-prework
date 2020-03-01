@@ -40,6 +40,12 @@ def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
+  
+  new_array []
+  index = 0 
+  
+  while index < cart.length do 
+    new_array_item = consolidate_cart(cart[index][:item, new_array])
 end
 
 def apply_clearance(cart)
