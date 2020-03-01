@@ -48,7 +48,7 @@ def apply_coupons(cart, coupons)
     
     new_array_item = find_item_by_name_in_collection(coupons[index][:item], cart)
     couponed_item_name = "#{coupons[index][item]} W/COUPON"
-    
+    cart_item_with_coupon = find_item_by_name_in_collection(coupons[index][:item], cart)
     index += 1 
   end 
 end
