@@ -33,23 +33,14 @@ def consolidate_cart(cart)
     index += 1 
   end 
   new_array
-  #binding.pry
 end
 
 def apply_coupons(cart, coupons)
-  # Consult README for inputs and outputs
-  #
-  # REMEMBER: This method **should** update cart
-  
   index = 0 
-  
   while index < coupons.length do 
-    
     cart_item = find_item_by_name_in_collection(coupons[index][:item], cart)
-    couponed_item_name = "#{coupons[index][item]} W/COUPON"
+    couponed_item_name = "#{coupons[index][:item]} W/COUPON"
     cart_item_with_coupon = find_item_by_name_in_collection(couponed_item_name, cart)
-    binding.pry
-    
     if cart_item && cart_item[:count] >= coupons[index][:num]
       if cart_item_with_coupon
         cart_item_with_coupon[:count] += coupon[index][:num]
