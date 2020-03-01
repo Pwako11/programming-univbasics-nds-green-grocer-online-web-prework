@@ -22,11 +22,12 @@ def consolidate_cart(cart)
   new_array = []
   index = 0 
   
-  while index < cart do 
+  while index < cart.length do 
+    new_array_item = find_item_by_name_in_collection
     
-    
+    index += 1 
   end 
-  
+  new_array
   binding.pry
 end
 
